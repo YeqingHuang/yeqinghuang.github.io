@@ -1,0 +1,554 @@
+/**
+* Template Name: iPortfolio - v1.4.0
+* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #222629;
+}
+
+a {
+  color: #a8a9b4;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  display: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  right: 15px;
+  bottom: 15px;
+  background: #61892f;
+  color: #fff;
+  transition: display 0.5s ease-in-out;
+}
+
+.back-to-top i {
+  font-size: 24px;
+  position: absolute;
+  top: 7px;
+  left: 8px;
+}
+
+.back-to-top:hover {
+  color: #fff;
+  background: #86c232;
+  transition: background 0.2s ease-in-out;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 280px;
+  transition: all ease-in-out 0.5s;
+  z-index: 9997;
+  transition: all 0.5s;
+  padding: 0 15px;
+  background: #222629;
+}
+
+#header .profile img {
+  margin: 80px auto 20px;
+  display: block;
+  width: 120px;
+  /*use last 70 to stand for transparency in hex color(70%)*/
+  border: 8px solid #474b4f70;
+  z-index: 9999;
+}
+
+#header .profile h1 {
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  text-align-last: center;
+  font-family: "Poppins", sans-serif;
+}
+
+#header .profile h1 a,
+#header .profile h1 a:hover {
+  color: #fff;
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+#header .profile .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #474b4f;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 35px;
+  height: 35px;
+  transition: 0.3s;
+}
+
+#header .profile .social-links a:hover {
+  background: #61892f;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Pop-up window to send email */
+#header .modal-header {
+  height: 50px;
+}
+
+#header .modal-title {
+  padding-top: 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #474b4f;
+  vertical-align: middle;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+#header .modal-body {
+  font-weight: 600;
+  font-style: italic;
+  color: #474b4f;
+}
+
+#header .modal-footer {
+  height: 55px;
+}
+
+#header .modal-footer button {
+  margin-top: 0;
+}
+
+#header .modal-footer .send-email {
+  background-color: #61892f;
+}
+
+#main {
+  margin-left: 280px;
+}
+
+@media (max-width: 1199px) {
+  #header {
+    left: -300px;
+  }
+  #main {
+    margin-left: 0;
+  }
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/* Desktop Navigation */
+.nav-menu {
+  padding-top: 30px;
+}
+
+.nav-menu a {
+  display: flex;
+  align-items: center;
+  color: #a8a9b4;
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  transition: 0.3s;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.nav-menu a:hover,
+.nav-menu .active > a,
+.nav-menu li:hover > a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Mobile Navigation */
+.mobile-nav-toggle {
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  z-index: 9997;
+  border: 0;
+  background: none;
+  font-size: 24px;
+  transition: all 0.4s;
+  outline: none !important;
+  line-height: 1;
+  cursor: pointer;
+  text-align: right;
+}
+
+.mobile-nav-toggle i {
+  color: #61892f;
+}
+
+.mobile-nav-active {
+  overflow: hidden;
+}
+
+.mobile-nav-active #header {
+  left: 0;
+}
+
+.mobile-nav-active .mobile-nav-toggle i {
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Cover Section
+--------------------------------------------------------------*/
+#cover-page {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/front-cover.jpg") top center;
+  background-size: cover;
+}
+
+#cover-page:before {
+  content: "";
+  background: rgba(5, 13, 24, 0.3);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+#cover-page .cover-page-container {
+  position: relative;
+  z-index: 2;
+  min-width: 300px;
+}
+
+#cover-page h1 {
+  margin: 0 0 20px 0;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+  opacity: 0.9;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1);
+}
+
+#cover-page p {
+  color: #fff;
+  opacity: 0.9;
+  margin-left: 3px;
+  margin-bottom: 100px;
+  font-size: 26px;
+  font-family: "Poppins", sans-serif;
+}
+
+#cover-page p span {
+  color: #fff;
+  padding-bottom: 4px;
+  letter-spacing: 1px;
+}
+
+@media (min-width: 1024px) {
+  #cover-page {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  #cover-page h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #cover-page h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 60px 0;
+}
+
+.section-bg {
+  background: #f5f8fd;
+}
+
+.section-title {
+  padding-bottom: 30px;
+  padding-left: 30px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  position: relative;
+  color: #437006;
+}
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #86c232;
+  bottom: 0;
+  left: 0;
+}
+
+.section-content {
+  font-size: 18px;
+}
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+#about {
+  height: 100vh;
+}
+
+.about .section-title {
+  padding-top: 50px;
+}
+
+.about .section-content {
+  padding: 5% 5% 0 5%;
+}
+
+.about .section-content p {
+  margin-bottom: 1rem;
+}
+/*--------------------------------------------------------------
+# Skills
+--------------------------------------------------------------*/
+/*.skills .section-content {
+  padding: 5% 5% 0 0;
+}*/
+
+.skills-content {
+  padding: 0 5% 5% 5%;
+}
+
+.skills .progress {
+  height: 60px;
+  display: block;
+  background: none;
+}
+
+.skills .progress .skill {
+  padding: 10px 0;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #162601;
+}
+
+.skills .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+
+.skills .progress-bar {
+  height: 20px;
+  background-color: #61892f;
+  opacity: 0.8;
+}
+
+/*--------------------------------------------------------------
+# Resume
+--------------------------------------------------------------*/
+.resume .row {
+  padding-left: 80px;
+}
+.resume .resume-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #050d18;
+}
+
+.resume .resume-item {
+  padding: 0 0 10px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #61892f;
+  position: relative;
+}
+
+.resume .resume-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #050d18;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item h5 {
+  font-size: 14px;
+  background: #e4e8d1;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+}
+
+.resume .resume-item h5 + p {
+  margin-bottom: 5px;
+}
+
+.resume .resume-item ul {
+  padding-left: 20px;
+}
+
+.resume .resume-item ul li {
+  padding-bottom: 5 px;
+}
+
+.resume .resume-item:last-child {
+  padding-bottom: 0;
+}
+
+.resume .resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #61892f;
+}
+
+/*--------------------------------------------------------------
+# Projects
+--------------------------------------------------------------*/
+#projects {
+  min-height: 100vh;
+}
+
+#projects .gallery {
+  padding: 0 5% 0 5%;
+}
+
+#projects .card {
+  border-radius: 10%;
+  margin: 0 auto;
+  width: 90%;
+}
+
+#projects .card-body .badge {
+  color: #222629;
+  background-color: #e4e8d1;
+  opacity: 0.8;
+}
+
+#projects h5 {
+  font-weight: 600;
+}
+
+#projects img {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+#projects .hidden {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+#projects a:hover {
+  opacity: 0.7;
+}
+
+#projects a:hover .hidden {
+  opacity: 1;
+}
+
+#projects .hidden span {
+  background-color: #474b4f;
+  color: white;
+  font-size: 15px;
+  text-transform: uppercase;
+  padding: 12px 25px;
+}
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  padding: 15px;
+  color: #474b4f;
+  font-size: 14px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 280px;
+  z-index: 9999;
+  background: #222629;
+}
+
+#footer .copyright {
+  text-align: center;
+}
+
+#footer .credits {
+  padding-top: 5px;
+  text-align: center;
+  font-size: 13px;
+  color: #474b4f;
+}
+
+@media (max-width: 1199px) {
+  #footer {
+    position: static;
+    width: auto;
+    padding-right: 20px 15px;
+  }
+}
