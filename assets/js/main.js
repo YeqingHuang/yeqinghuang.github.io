@@ -100,7 +100,7 @@
 // ask user to confirm when clicking on email link in portfolio
 let sendMail = function (e) {
     window.location.href =
-        "mailto:yeqingh22@gmail.com?body=Hi, I found you from your website";
+        "mailto:yeqingh22@gmail.com?body=Hi,%20I%20found%20you%20from%20your%20website";
 };
 
 let emailButton = document.getElementsByClassName("send-email")[0];

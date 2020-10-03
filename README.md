@@ -1,6 +1,6 @@
 ## My Personal Website
 
-This is one of my projects for the course _CS5610 Web Development_ at Northeastern University. You can find the [demo here](https://www.google.com/).
+This is one of my projects for the course _CS5610 Web Development_ at Northeastern University. You can find the [demo here](https://yeqinghuang.github.io/).
 
 ### Resoures
 
@@ -17,7 +17,7 @@ The color scheme I used comes from this [blog](https://visme.co/blog/website-col
 ### How to install and use
 
 No dependencies required for this project.   
-You can check `package.json` that I used to enhance coding styles.
+You can check `package.json` for the packages I used to enhance coding styles.
 
 ### Reference
 

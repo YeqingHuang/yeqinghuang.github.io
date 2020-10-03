@@ -9,7 +9,7 @@ body {
 }
 
 .container p {
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: bold;
 	color: #474b4f;
 }
@@ -21,14 +21,30 @@ body {
 }
 
 .back-to-main {
-	font-size: 17px;
+	font-size: 15px;
 	font-weight: 600;
 	color: #61892f;
 	text-decoration: underline;
 }
 
 .back-to-main:hover {
-	font-size: 18px;
+	font-size: 15px;
 	font-style: italic;
 	color: #61892f;
+}
+
+@media (max-width: 768px) {
+	.container p {
+		font-size: 16px;
+	}
+
+	.back-to-main {
+		font-size: 14px;
+		font-weight: 500;
+		text-decoration: underline;
+	}
+
+	.back-to-main:hover {
+		font-size: 14px;
+	}
 }
