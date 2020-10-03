@@ -434,8 +434,8 @@ section {
   padding-left: 20px;
 }
 
-.resume .resume-item ul li {
-  padding-bottom: 5 px;
+.resume .resume-item li {
+  padding-bottom: 5px;
 }
 
 .resume .resume-item:last-child {
@@ -497,7 +497,6 @@ section {
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
 }
 
 #projects a:hover {
@@ -514,37 +513,4 @@ section {
   font-size: 15px;
   text-transform: uppercase;
   padding: 12px 25px;
-}
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
-#footer {
-  padding: 15px;
-  color: #474b4f;
-  font-size: 14px;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 280px;
-  z-index: 9999;
-  background: #222629;
-}
-
-#footer .copyright {
-  text-align: center;
-}
-
-#footer .credits {
-  padding-top: 5px;
-  text-align: center;
-  font-size: 13px;
-  color: #474b4f;
-}
-
-@media (max-width: 1199px) {
-  #footer {
-    position: static;
-    width: auto;
-    padding-right: 20px 15px;
-  }
 }
