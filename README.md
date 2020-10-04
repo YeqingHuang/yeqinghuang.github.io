@@ -1,6 +1,6 @@
 ## My Personal Website
 
-This is one of my projects for the course _CS5610 Web Development_ at Northeastern University. 
+This is one of my projects for the course _CS5610 Web Development_ at Northeastern University. You can find the [demo here](https://yeqinghuang.github.io/), or refer to [Google slides](https://docs.google.com/presentation/d/1pbm0dqsHG0e5QT8eDDRXc9jfq1uYHwS87IEvrANNRm0/edit?usp=sharing).
 
 ### Resoures
 
