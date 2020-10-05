@@ -105,11 +105,3 @@ let sendMail = function (e) {
 
 let emailButton = document.getElementsByClassName("send-email")[0];
 emailButton.addEventListener("click", sendMail);
-
-// let emailElement = document.getElementsByClassName("email")[0];
-// let confirmIt = function (e) {
-//     if (!confirm("Send me an email?")) {
-//         e.preventDefault();
-//     }
-// };
-// emailElement.addEventListener("click", confirmIt, false);
